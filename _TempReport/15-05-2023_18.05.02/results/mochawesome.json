@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-05-15T12:35:48.237Z",
+    "end": "2023-05-15T12:36:27.933Z",
+    "duration": 39696,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65c2d4ee-6b40-4098-b707-cf1d95e25fb2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\CypressioSiteTest.cy.js",
+      "file": "cypress\\e2e\\CypressioSiteTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "79b03914-0051-4190-8da0-3d5f919f0cea",
+          "title": "Cypressio Site Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test scenario on Cypressio Page",
+              "fullTitle": "Cypressio Site Test test scenario on Cypressio Page",
+              "timedOut": null,
+              "duration": 19508,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\e2e\\\\CypressioSiteTest.cy.js\"\n}",
+              "code": "cy.visit(Cypress.env(\"cypressio_URL\"));\nCypressio_PO.validateMenuItems();\nCypressio_PO.hoverOverDocs();\nCypressio_PO.clickOnText(data.clickText_Cypressio_PO);",
+              "err": {},
+              "uuid": "90b69397-9d9d-4976-b801-5b3dbf68927f",
+              "parentUUID": "79b03914-0051-4190-8da0-3d5f919f0cea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test scenario on End to End Testing Page",
+              "fullTitle": "Cypressio Site Test test scenario on End to End Testing Page",
+              "timedOut": null,
+              "duration": 4469,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress\\\\e2e\\\\CypressioSiteTest.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"\\\\CypressioSiteTest.cy.js\\\\Cypressio Site Test -- test scenario on End to End Testing Page (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(Cypress.env(\"endToEndTest_URL\"));\nEndToEnd_PO.validateUrlContains(data.urlContains1_EndToEnd_PO, data.urlContains2_EndToEnd_PO);\nEndToEnd_PO.verifyPageTitle(data.title_EndToEnd_PO);\nEndToEnd_PO.searchFor(data.search_EndToEnd_PO);",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'toLowerCase')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at Context.eval (https://www.cypress.io/__cypress/tests?p=cypress\\support\\e2e.js:1746:48)",
+                "diff": null
+              },
+              "uuid": "5ca923fe-f300-4305-b9bd-2de6ff8de245",
+              "parentUUID": "79b03914-0051-4190-8da0-3d5f919f0cea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test scenario in Viewport Docs",
+              "fullTitle": "Cypressio Site Test test scenario in Viewport Docs",
+              "timedOut": null,
+              "duration": 13013,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\e2e\\\\CypressioSiteTest.cy.js\"\n}",
+              "code": "cy.visit(Cypress.env(\"viewport_URL\"));\nDocsViewport_PO.validateHeader(data.header_DocsViewport_PO);\nDocsViewport_PO.validateText(data.text_DocsViewport_PO);",
+              "err": {},
+              "uuid": "09defdd1-d1e2-405f-b352-16d3b846dd90",
+              "parentUUID": "79b03914-0051-4190-8da0-3d5f919f0cea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90b69397-9d9d-4976-b801-5b3dbf68927f",
+            "09defdd1-d1e2-405f-b352-16d3b846dd90"
+          ],
+          "failures": [
+            "5ca923fe-f300-4305-b9bd-2de6ff8de245"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 36990,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./cypress/results/",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

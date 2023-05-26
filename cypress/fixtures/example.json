@@ -1,0 +1,15 @@
+{
+  "name": "Using fixtures to represent data",
+  "email": "hello@cypress.io",
+  "body": "Fixtures are a great way to mock data for responses to routes",
+  "clickText_Cypressio_PO":"Writing your first test",
+  "title_EndToEnd_PO":"Writing your first e2e test",
+  "search_EndToEnd_PO": "cy.viewport()",
+  "urlContains1_EndToEnd_PO": "writing-your-first-end-to-end-test",
+  "urlContains2_EndToEnd_PO": "end-to-end-testing",
+  "header_DocsViewport_PO": "Viewport",
+  "text_DocsViewport_PO": "Control the size and orientation of the screen for your application.",
+  "textInput": "hello, How are You?",
+  "isBold": true,
+  "isItalic": true
+}

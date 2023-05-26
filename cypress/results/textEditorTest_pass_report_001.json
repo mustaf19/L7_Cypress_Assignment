@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-17T07:32:58.287Z",
+    "end": "2023-05-17T07:33:08.388Z",
+    "duration": 10101,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9c429041-0ef6-4360-b90d-413b64ad9557",
+      "title": "",
+      "fullFile": "cypress\\e2e\\textEditorTest.cy.js",
+      "file": "cypress\\e2e\\textEditorTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36442cae-b71b-46de-8076-9f51b0e71b1b",
+          "title": "Text editor Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check if there is infinite Scroll",
+              "fullTitle": "Text editor Test Check if there is infinite Scroll",
+              "timedOut": null,
+              "duration": 7518,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\e2e\\\\textEditorTest.cy.js\"\n}",
+              "code": "cy.visit(Cypress.env(\"iframeTestSite_URL\"));\nimport_TextEditor_PO.default.clearText();\nimport_TextEditor_PO.default.addText(data.textInput);\nimport_TextEditor_PO.default.boldText(data.isBold);\nimport_TextEditor_PO.default.italicText(data.isItalic);\nimport_TextEditor_PO.default.checkForText(data.textInput);\nimport_TextEditor_PO.default.checkForBold(data.textInput, data.isBold);\nimport_TextEditor_PO.default.checkForItalic(data.textInput, data.isItalic);",
+              "err": {},
+              "uuid": "64f56129-59f0-460d-b1ab-82bf4843fa57",
+              "parentUUID": "36442cae-b71b-46de-8076-9f51b0e71b1b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "64f56129-59f0-460d-b1ab-82bf4843fa57"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7518,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./cypress/results/",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
